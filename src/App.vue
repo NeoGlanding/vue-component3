@@ -1,6 +1,6 @@
 <template>
   <p>Hello</p>
-  <PassThroughComp />
+  <PassThroughComp :selected="selected" />
 </template>
 
 <script>
@@ -13,12 +13,20 @@ export default {
   },
   data() {
     return {
-      friends: ['Eko', 'Kurniawan', 'Khannedy']
+      friends: ['Eko', 'Kurniawan', 'Khannedy'],
+      selected: ''
     }
   },
   provide() {
     return {
-      friends: this.friends 
+      friends: this.friends,
+      selected: this.selected,
+      selectFriends: this.selectFriends, 
+    }
+  },
+  methods: {
+    selectFriends(name) {
+      this.selected = name;
     }
   }
 }

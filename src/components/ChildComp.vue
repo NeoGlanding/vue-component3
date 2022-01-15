@@ -1,12 +1,12 @@
 <template>
-    <div v-for="(el, i) in friends" :key="i" class="">
+    <div v-for="(el, i) in friends" :key="i" @click="selectFriends(el)" class="">
         <p>This is Child Component by {{ el }}</p>
     </div>
 </template>
 
 <script>
 export default {
-    inject: ['friends']
+    inject: ['friends', 'selectFriends']
 }
 </script>
 
