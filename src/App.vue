@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <p>Hello</p>
+  <PassThroughComp />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PassThroughComp from './components/PassThroughComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PassThroughComp
   }
 }
 </script>
