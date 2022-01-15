@@ -11,7 +11,6 @@ export default {
 }
 </script>
 
-<style scop
-ChildComped>
+<style scoped>
 
 </style>

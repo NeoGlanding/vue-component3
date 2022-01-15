@@ -10,6 +10,16 @@ export default {
   name: 'App',
   components: {
     PassThroughComp
+  },
+  data() {
+    return {
+      friends: ['Eko', 'Kurniawan', 'Khannedy']
+    }
+  },
+  provide() {
+    return {
+      friends: this.friends 
+    }
   }
 }
 </script>
